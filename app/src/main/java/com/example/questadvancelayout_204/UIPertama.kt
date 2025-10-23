@@ -94,4 +94,4 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                 modifier = Modifier
                     .size(100.dp)
                     .padding(all = 5.dp) // Modifier disamakan
-            )
+             )
