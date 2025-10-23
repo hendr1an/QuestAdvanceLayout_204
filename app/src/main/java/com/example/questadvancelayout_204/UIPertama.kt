@@ -142,4 +142,12 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
             )
              Spacer(modifier = Modifier.width(30.dp))
     }
+        Column {
+            Text(
+                text = "M. Gyan Hendriansyah",
+                fontSize = 30.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.White,
+                modifier = Modifier.padding(top = 10.dp)
+            )
 
