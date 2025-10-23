@@ -99,3 +99,4 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
 
             Column {
                 Text(
+                    text = "M. Gyan Hendriansyah",
