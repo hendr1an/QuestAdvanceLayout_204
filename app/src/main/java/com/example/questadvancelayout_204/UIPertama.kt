@@ -21,7 +21,7 @@ import androidx.compose.ui.unit.sp
 fun AktivitasPertama(modifier: Modifier = Modifier) {
     Column(
         modifier = modifier
-            .padding(top = 100.dp)
+            .padding(top = 100.dp) // <-- Ini tetap dipertahankan dari kode Anda
             .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -35,6 +35,8 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
             fontSize = 22.sp
         )
         Spacer(modifier = Modifier.height(25.dp))
+
+
         Card(
             modifier = Modifier
                 .fillMaxWidth(fraction = 1f)
@@ -73,15 +75,13 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                 }
             }
         }
-        Box(
-            modifier = Modifier.fillMaxSize()
-        ){
-            Text(
-                text = stringResource(id = R.string.copyright),
-                modifier = Modifier
-                    .align (Alignment.BottomCenter)
-                    .padding(bottom = 50.dp)
+
+
+        Card(
+            modifier = Modifier
+                .fillMaxWidth(fraction = 1f)
+                .padding(all = 12.dp), // Modifier disamakan agar ukuran identik
+            colors = CardDefaults.cardColors(
+                containerColor = Color.Blue // Warna diubah menjadi Biru
             )
-        }
-    }
-}
+        )
