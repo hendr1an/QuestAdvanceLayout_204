@@ -89,4 +89,9 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
             modifier = Modifier.fillMaxWidth()
         ) {
             val gambar = painterResource(id = R.drawable.logoumy) // Logo yang sama
-            Image(
+            Image(  painter = gambar,
+                contentDescription = stringResource(id = R.string.logo_desc),
+                modifier = Modifier
+                    .size(100.dp)
+                    .padding(all = 5.dp) // Modifier disamakan
+            )
