@@ -105,3 +105,9 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                     color = Color.White,
                     modifier = Modifier.padding(top = 10.dp) // Padding disesuaikan
                 )
+                Text(
+                    text = "Pekalongan", //
+                    fontSize = 20.sp, // Ukuran font disamakan
+                    color = Color.White, // Warna diubah menjadi Putih
+                    modifier = Modifier.padding(top = 5.dp) // Padding disesuaikan
+                )
