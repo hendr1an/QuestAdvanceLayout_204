@@ -25,5 +25,8 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
             .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     )
+    Text(
+        text = stringResource(id = R.string.prodi),
+    )
 }
 
