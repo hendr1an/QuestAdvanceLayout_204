@@ -85,3 +85,8 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                 containerColor = Color.Blue // Warna diubah menjadi Biru
             )
         )
+        Row(
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            val gambar = painterResource(id = R.drawable.logoumy) // Logo yang sama
+            Image(
