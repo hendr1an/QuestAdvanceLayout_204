@@ -44,5 +44,16 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
         )
     ) {
         Row(
+            modifier = Modifier.fillMaxWidth() // Tambahkan ini agar Row mengisi lebar Card
+        ) {
+            // KOREKSI: Menggunakan R.drawable.logo_ugm sesuai yang terlihat di proyek Anda
+            val gambar = painterResource(id = R.drawable.logoumy)
+            Image(
+                painter = gambar,
+                contentDescription = stringResource(id = R.string.logo_desc), // Praktik yang baik: tambahkan deskripsi konten
+                modifier = Modifier
+                    .size(100.dp)
+                    .padding(all = 5.dp)
+            )
 }
 
