@@ -84,85 +84,101 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
             colors = CardDefaults.cardColors(
                 containerColor = Color.Blue // Warna diubah menjadi Biru
             )
-        )
-        Row(
-            modifier = Modifier.fillMaxWidth()
         ) {
-            val gambar = painterResource(id = R.drawable.logoumy) // Logo yang sama
-            Image(  painter = gambar,
-                contentDescription = stringResource(id = R.string.logo_desc),
-                modifier = Modifier
-                    .size(100.dp)
-                    .padding(all = 5.dp) // Modifier disamakan
-             )
-            Spacer(modifier = Modifier.width(30.dp))
-
-            Column {
-                Text(
-                    text = "M. Gyan Hendriansyah",
-                    fontSize = 30.sp, // Ukuran font disamakan
-                    fontWeight = FontWeight.Bold, // Dibuat Bold sesuai gambar
-                    color = Color.White,
-                    modifier = Modifier.padding(top = 10.dp) // Padding disesuaikan
+            Row(
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                val gambar = painterResource(id = R.drawable.logoumy) // Logo yang sama
+                Image(
+                    painter = gambar,
+                    contentDescription = stringResource(id = R.string.logo_desc),
+                    modifier = Modifier
+                        .size(100.dp)
+                        .padding(all = 5.dp) // Modifier disamakan
                 )
-                Text(
-                    text = "Pekalongan", //
-                    fontSize = 20.sp, // Ukuran font disamakan
-                    color = Color.White, // Warna diubah menjadi Putih
-                    modifier = Modifier.padding(top = 5.dp) // Padding disesuaikan
-                )
-                Text(
-                    text = "087875772919", // Teks baru ditambahkan
-                    fontSize = 20.sp,
-                    color = Color.White,
-                    modifier = Modifier.padding(top = 5.dp)
-                )
+                Spacer(modifier = Modifier.width(30.dp))
+                // Isi Column disesuaikan dengan gambar
+                Column {
+                    Text(
+                        text = "M. Gyan Hendriansyah",
+                        fontSize = 30.sp, // Ukuran font disamakan
+                        fontWeight = FontWeight.Bold, // Dibuat Bold sesuai gambar
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 10.dp) // Padding disesuaikan
+                    )
+                    Text(
+                        text = "Pekalongan", //
+                        fontSize = 20.sp, // Ukuran font disamakan
+                        color = Color.White, // Warna diubah menjadi Putih
+                        modifier = Modifier.padding(top = 5.dp) // Padding disesuaikan
+                    )
+                    Text(
+                        text = "087875772919", // Teks baru ditambahkan
+                        fontSize = 20.sp,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 5.dp)
+                    )
+                }
             }
         }
-    }
 
-    Card(
-        modifier = Modifier
-            .fillMaxWidth(fraction = 1f)
-            .padding(all = 12.dp), // Modifier disamakan agar ukuran identik
-        colors = CardDefaults.cardColors(
-            containerColor = Color.Green // Warna diubah menjadi Hijau
-        )
-    ) {
-        Row(
-            modifier = Modifier.fillMaxWidth()
+        // ## CARD 3 (TAMBAHAN BARU - HIJAU) ##
+        Card(
+            modifier = Modifier
+                .fillMaxWidth(fraction = 1f)
+                .padding(all = 12.dp), // Modifier disamakan agar ukuran identik
+            colors = CardDefaults.cardColors(
+                containerColor = Color.Green // Warna diubah menjadi Hijau
+            )
         ) {
-            val gambar = painterResource(id = R.drawable.logoumy) // Logo yang sama
-            Image(
-                painter = gambar,
-                contentDescription = stringResource(id = R.string.logo_desc),
+            Row(
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                val gambar = painterResource(id = R.drawable.logoumy) // Logo yang sama
+                Image(
+                    painter = gambar,
+                    contentDescription = stringResource(id = R.string.logo_desc),
+                    modifier = Modifier
+                        .size(100.dp)
+                        .padding(all = 5.dp) // Modifier disamakan
+                )
+                Spacer(modifier = Modifier.width(30.dp))
+                // Isi Column identik dengan Card Biru
+                Column {
+                    Text(
+                        text = "M. Gyan Hendriansyah",
+                        fontSize = 30.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                    Text(
+                        text = "Pekalongan",
+                        fontSize = 20.sp,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 5.dp)
+                    )
+                    Text(
+                        text = "087875772919",
+                        fontSize = 20.sp,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 5.dp)
+                    )
+                }
+            }
+        }
+
+
+        // ## BOX COPYRIGHT (DARI KODE ASLI ANDA) ##
+        Box(
+            modifier = Modifier.fillMaxSize()
+        ) {
+            Text(
+                text = stringResource(id = R.string.copyright),
                 modifier = Modifier
-                    .size(100.dp)
-                    .padding(all = 5.dp) // Modifier disamakan
-            )
-             Spacer(modifier = Modifier.width(30.dp))
-    }
-        Column {
-            Text(
-                text = "M. Gyan Hendriansyah",
-                fontSize = 30.sp,
-                fontWeight = FontWeight.Bold,
-                color = Color.White,
-                modifier = Modifier.padding(top = 10.dp)
-            )
-            Text(
-                text = "Pekalongan",
-                fontSize = 20.sp,
-                color = Color.White,
-                modifier = Modifier.padding(top = 5.dp)
-            )
-            Text(
-                text = "087875772919",
-                fontSize = 20.sp,
-                color = Color.White,
-                modifier = Modifier.padding(top = 5.dp)
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 50.dp)
             )
         }
     }
 }
-
