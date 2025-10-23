@@ -150,4 +150,19 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                 color = Color.White,
                 modifier = Modifier.padding(top = 10.dp)
             )
+            Text(
+                text = "Pekalongan",
+                fontSize = 20.sp,
+                color = Color.White,
+                modifier = Modifier.padding(top = 5.dp)
+            )
+            Text(
+                text = "087875772919",
+                fontSize = 20.sp,
+                color = Color.White,
+                modifier = Modifier.padding(top = 5.dp)
+            )
+        }
+    }
+}
 
